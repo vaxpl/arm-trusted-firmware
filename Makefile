@@ -153,6 +153,7 @@ TF_CFLAGS		+= 	-nostdinc -ffreestanding -Wall			\
 				$(TF_CFLAGS_$(ARCH))				\
 				${DEFINES} ${INCLUDES}
 TF_CFLAGS		+=	-ffunction-sections -fdata-sections
+TF_CFLAGS		+=	-fno-stack-protector
 #-Werror 
 LDFLAGS			+=	--fatal-warnings -O1
 LDFLAGS			+=	--gc-sections
